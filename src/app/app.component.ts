@@ -7,7 +7,7 @@ import { DemoService } from './demo.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bye bye cruel world!';
+  title = 'server is down...';
   constructor(private service: DemoService) {
     service.getHelloWorld().subscribe((text: string) => {
       this.title = text;
